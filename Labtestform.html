@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Appointment</title>
+    <style>
+    body{
+        border: 2px solid black;
+    }
+.container{
+    display:flexbox;
+    position: relative;
+    justify-content: center;
+}
+.image{
+    max-width: 100%;
+    max-height: 100%;
+    position: sticky;
+    float: right;
+    
+}
+.text{
+
+    padding-left: 20px;
+    align-content: left;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="image">
+            <img src="C:\Users\Tanush Sujoy\OneDrive\Documents\LabSessions\Images\Lab-Test\lab-test.jpg" alt="Lab-Test">
+        </div>
+        <div class="text">
+        <header>
+            <h1>1. Your Contact Details</h1>
+        </header>
+        <form action="">
+            <article>
+                <h3>Full Name</h3>
+                <input type="text" title="name" required spellcheck="true">
+            </article>
+            <article>
+                <h3>Patient Id</h3>
+                <input type="number" min="6000000000" max="9999999999" required>
+            </article>
+
+            <article>
+                <h3>Phone No</h3>
+                <input type="number" min="6000000000" max="9999999999" required>
+            </article>
+
+            <article>
+                <h3>Email Address</h3>
+                <input type="email" required>
+            </article>
+
+
+
+            <article>
+                <h2>2.Address</h2>
+                <h3>H:No</h3>
+                <input type="text" required>
+
+                <h3>Street</h3>
+                <input type="text" required>
+
+                <h3>Area</h3>
+                <input type="text" required>
+
+                <h3>District</h3>
+                <select name="District" id="district" required>
+                    <option value="">Choose</option>
+                    <option value="Bangalore Urban">Bangalore Urban</option>
+                    <option value="Bangalore Rural">Bangalore Rural</option>
+                    <option value="Ramnagar">Ramnagar</option>
+                </select>
+            </article>
+
+            <article>
+                <h3>3.Choose the Test Type</h3>
+                <p><h3>Check atleast one box without fail</h3></p>
+                <input type="checkbox" id="c1" name="option1" value="Blood count">
+                <label for="c1">CBC</label>
+                <br>
+                <input type="checkbox" id="c2" name="option2" value="Urine count">
+                <label for="c2">Complete Urine</label>
+                <br>
+                <input type="checkbox" id="c3" name="option3" value="Heart functioning">
+                <label for="c3">Lipid Profile</label>
+                <br>
+                <input type="checkbox" id="c4" name="option3" value="Hormonal">
+                <label for="c3">Thyroid profile</label>
+                <input type="checkbox" id="c4" name="option3" value="Glucose level">
+                <label for="c4">Glucose Test</label>
+            </article>
+
+            <article>
+                <h3>4.Do you want hard copy of the report?</h3>
+                <input type="radio" id="c5" name="option" value="True" required>
+                <label for="c5">Yes</label>
+                <br>
+                <input type="radio" id="c6" name="option" value="False">
+                <label for="c6">No</label>
+            </article>
+
+            <article>
+                <h3>5.Select Your Comfortable Date and Time</h3>
+                <h3>Date</h3>
+                <input type="Date" required>
+
+                <h3>Time</h3>
+                <input type="time" required>
+                </article>
+                <br>
+                <button form="lab-form"> Reset</button>
+                <button form="lab-form"> Submit</button>
+
+
+        </form>
+    </div>
+        </div>
+    </div>
+
+    </section>
+</body>
+
+</html>
